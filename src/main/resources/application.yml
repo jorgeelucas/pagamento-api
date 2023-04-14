@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://myuser:pass@localhost:27017/pagamento_db

@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:4.4
+    container_name: mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: pass
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db
+
+volumes:
+  mongodb-data:
+
+# Properties: spring.data.mongodb.uri=mongodb://myuser:pass@localhost:27017/pagamentos_db
+
+# docker compose up -d
+
+# docker exec -it mongodb mongo -u root -p pass
+# use pagamento_db
+# db.createUser({user: "myuser", pwd: "pass", roles: [{role: "readWrite", db: "pagamento_db"}]});

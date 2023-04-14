@@ -1,0 +1,8 @@
+# Adicionar a dependencia do mongo
+# Adicionar a propriedade no application.properties
+# Adicionar a anotação de @Document nas entidades (Pagamento)
+# Criar o repositório herdando de ReactiveCrudRepository
+# Atualizar o Service e Controller
+# Criar o docker
+# Criar o usuário no docker
+# Rodar docker compose up -d
